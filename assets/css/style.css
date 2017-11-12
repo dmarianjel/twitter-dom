@@ -21,16 +21,69 @@ body{
 }
 .conteiner-form{
 	margin: 30px;
-	padding-left: 10px;
+	padding-left: 80px;
+	padding-right: 80px;
+	vertical-align: center;
+}
+.usuario{
+	display: inline-block;
+	width: 250px;
+	height: 50px;
+	background: #e4f2f7;
+	padding:70px 5px 150px 20px;
+	background: #fff;
+	margin-left: 120px;
+	margin-top: 10px;
+	border-radius: 2px;
+	border: 20px solid #0085b0/*#e4f2f7*/;
+	bottom: 50px;
+}
+.usuario, h3{
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight:bolder;
+	color: #000;
+	text-align: right;
+	padding-right: 10px;
+}
+.usuario p{
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight:bolder;
+	color: #000;
+	text-align: right;
+}
+.foto{
+	display: inline-block;
+	margin-bottom: 20px;
+	vertical-align: center;
+	float:left;
+}
+.foto img{
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	bottom: 30px;
+
 }
 .text-form{
+	display: inline-block;
 	width: 400px;
 	height: auto;
-	padding:5px 5px 20px 20px;
+	bottom: 80px;
+	padding:100px 5px 5px 20px;
+	border-color: 5px #e4f2f7;
 	background: #fff;
-	margin-left: 500px;
-	border-radius: 2px;
+	margin-left: 10px;
+	border-radius: 6px;
 }
+textarea #comment{
+	padding-top: 10px;
+}
+
 .fa-smile-o{
 	color: grey;
 	padding-right: 60px;
@@ -41,14 +94,11 @@ hr{
 #comment{
 	border:none;
 	padding-left: 30px;	
-}
-textarea, #comment{
-	padding-top: 30px;
 }	
-textarea,.txt{
+/*textarea,.txt{
 	vertical-align: bottom;
-	width: 350px;
-	height: 80px;
+	/*width: 350px;
+	height: 80px;*/
 }
 #btn{
 	margin-left: 20px;
@@ -60,3 +110,4 @@ textarea,.txt{
 .placeholder{
 	vertical-align: center
 }
+

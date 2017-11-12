@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Twitter</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -16,15 +16,17 @@
 	<section class="conteiner-form">
 		<div class="usuario">
 			<h3>Daniela Mariánjel</h3>
-			<ul>
-				
-			</ul>
+			<div class="foto">
+				<img src="assets/img/fototwitter.jpeg" alt="">
+			</div>
+			<p>Soy front-end developer jr.</p>		
 		</div>
 		<div class="text-form">
-			<textarea id="comment" placeholder="¿Qué está pasando?..."></textarea>
+			<textarea id="comment" rows="5" cols="40"placeholder="¿Qué está pasando?..."onkeypress="contwords()"></textarea>
 			<i class="fa fa-smile-o" aria-hidden="true"></i>
 			<hr>
-				<button type="button" id="btn">twittear</button>
+			\n
+			<button type="button" id="btn">twittear</button>		
 		</div>
 		<div id="timeLine"></div>
 	</section>

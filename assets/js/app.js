@@ -1,23 +1,22 @@
-    var sendButton = document.getElementById("comment");
-    var inputTuit = document.getElementById("btn");
+ var sendButton = document.getElementById("btn");
+    var texTarea = document.getElementById("comment");
     var timeLine = document.getElementById("timeLine");
     
-    inputTuit.onclick = function() {
-        if (sendButton.value == "") {
-            alert("debe ingresar comentario");
-        } else {
+    sendButton.onclick = function() {
+        if (texTarea.value !== "") {
+
             var tuitDiv = document.createElement("div");
             var nameSpan = document.createElement("span");
             var dateSpan = document.createElement("span");
-            var tuitP = document.createElement("p");
-            var text = document.createTextNode(sendButton.value);
-            tuitP.appendChild(text);
-            tuitDiv.appendChild(tuitP);
+            var paragraph = document.createElement("p");
+            var text = document.createTextNode(texTarea.value);
+            paragraph.appendChild(text);
+            tuitDiv.appendChild(paragraph);
             tuitDiv.appendChild(nameSpan);
             tuitDiv.appendChild(dateSpan);
-            tuitDiv.className = "tuit";
+            tuitDiv.setAttribute = ("id", "tuit");
             nameSpan.textContent = "Daniela";
-            dateSpan.textContent = new Date();
+            dateSpan.textContent =  new Date();//moment().format('lll')//
             timeLine.insertBefore(tuitDiv, timeLine.children[0]);
         }
     };                                   
@@ -28,18 +27,18 @@ textarea.oninput = function() {
   textarea.style.height = Math.min(textarea.scrollHeight, heightLimit) + "px";
 };
 /*var maxChar= document.createElement("chartext").value;
-
-
 function contChar(e){
-
 }
 var textarea = document.getElementById('comment');
 textarea.addEventListener('keyup', function (e) {
     var characters = textarea.value.length;
     
 });
-
 var */
+
+
+
+
 
 
 
